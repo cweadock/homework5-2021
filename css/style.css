@@ -59,10 +59,14 @@ footer{
 nav a{
   color: black;
   font-weight: bold;
+  text-decoration: none;
   /* Requirement 1 code here*/
 }
 
   /* Requirement 2 code here*/
+nav a:hover{
+  text-decoration: underline;
+}
 
 
 
