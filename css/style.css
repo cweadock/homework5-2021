@@ -83,15 +83,22 @@ nav a:hover{
 }
 
 /* Requirement 3b code here*/
+.skip a:hover{
 
+}
 
 /* Requirement 4 code here*/
-
+*:focus{
+  border: 2px solid black;
+}
 
 
 .container{
   /* Requirement 5 code here*/
-
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-row-gap: 15px;
 }
 
 /* Remainder of requirements here: */
@@ -102,6 +109,8 @@ header{
   background-size: cover; /* Parallax effect */
   color: white;
   height: 400px; /* Parallax effect */
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 
   /* YOUR CODE HERE; */
 }
@@ -109,23 +118,48 @@ header{
 
 
 .about-image{
-  
+  grid-column: 1 / -1;
+  max-height: 700px;
+  grid-row: 3 / 5;
 }
 
 .about{
- 
+ grid-column: 2 / 4;
+ grid-row: 2 / 4;
 }
 
 .method-image{
- 
+ grid-column: 1 / -1;
+ max-height: 700px;
+ grid-row: 2 / 4;
 }
 
 .method{
-  
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
 }
 
-/* You need to write some of your own selectors here */
+.clients{
+  grid-column: 2 /4;
+  grid-row: 4 / 6;
+}
 
+.contact{
+  grid-column: 2 / 4;
+  grid-row: 5 / 7;
+}
+
+.clients-image{
+  grid-column: 1 / -1;
+  max-height: 700px;
+  grid-row: 4 / 6;
+}
+
+.contact-image{
+  grid-column: 1 / -1;
+  max-height: 700px;
+  grid-row: 5 / 7;
+}
 
 
 .text-block{
@@ -145,41 +179,43 @@ header{
   }
 
   .container{
-   
+   display: grid;
+   grid-template-columns: 50px auto 500px auto 50px;
+   grid-template-rows: repeat(4, 400px);
   }
 
   
 
   .about-image{
-  
+    grid-column: 2 / 5;
   }
 
   .about{
-    
+    grid-column: 3 / 6;
   }
 
   .method-image{
-    
+    grid-column: 3 / 6;
   }
 
   .method{
-   
+   grid-column: 2 / 5;
   }
 
   .clients-image{
-    
+    grid-column: 2 / 5;
   }
 
   .clients{
-    
+    grid-column: 3 / 6;
   }
 
   .contact-image{
-    
+    grid-column: 3 / 6;
   }
 
   .contact{
-    
+    grid-column: 2 / 5;
   }
 
 }
