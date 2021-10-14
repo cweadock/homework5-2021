@@ -85,9 +85,10 @@ nav a:hover{
 }
 
 /* Requirement 3b code here*/
-.skip a:hover{
+.skip a:focus{
   position: absolute;
   top: 0px;
+  margin: auto;
 }
 
 /* Requirement 4 code here*/
@@ -115,6 +116,7 @@ header{
   height: 400px; /* Parallax effect */
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
+  background-image: url('../images/header.jpg');
 
   /* YOUR CODE HERE; */
 }
@@ -173,7 +175,8 @@ header{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
-  margin: auto;
+  /* margin: auto; */
+  align-self: center;
 
   /* Your code here */
 
